@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Play with colors</title>
+    <style>
+        h1 {
+            margin-left: 100px;
+        }
+
+        .button_container button {
+            width: 15%;
+            margin-top: 65px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myH1">Play with Colors - Project 1</h1>
+    <div class="button_container">
+        <button onclick="btnRed()" class="btn btn-danger">Red</button>
+        <button onclick="btnBlue()" class="btn btn-primary">Blue</button>
+        <button onclick="btnGreen()" class="btn btn-success">Green</button>
+        <button onclick="btnOrange()" class="btn btn-warning">Orange</button>
+        <button onclick="btnSkyBlue()" class="btn btn-info">SkyBlue</button>
+    </div>
+    <script>
+        function btnRed() {
+            document.body.style.backgroundColor = "Red";
+            document.getElementById('myH1').style.color = "White";
+        }
+        function btnBlue() {
+            document.body.style.backgroundColor = "Blue";
+            document.getElementById('myH1').style.color = "White";
+        }
+        function btnGreen() {
+            document.body.style.backgroundColor = "Green";
+            document.getElementById('myH1').style.color = "White";
+        }
+        function btnOrange() {
+            document.body.style.backgroundColor = "Orange";
+            document.getElementById('myH1').style.color = "White";
+        }
+        function btnSkyBlue() {
+            document.body.style.backgroundColor = "Skyblue";
+            document.getElementById('myH1').style.color = "Black";
+        }
+    </script>
+</body>
+
+</html>
